@@ -29,7 +29,7 @@
         var playerYspeed = 2;
 
         var bricks = [];
-        
+
         var score = 0;
 
         function mainloop() { // loop runs code 50 times per second
@@ -78,7 +78,7 @@
                 if (brick.brickXpos < 0) { // left edge bounce
                     brick.brickXspeed *= -1;
                 }
-                if (brick.brickYpos > canvas.height - brick.brickSize) {// bottom edge - bricks out bottom
+                if (brick.brickYpos > canvas.height - brick.brickSize) { // bottom edge - bricks out bottom
                     brick.brickYpos = 0;
                     brick.brickSize = Math.floor(Math.random() * (10 - 5) + 5);
                     score++;
